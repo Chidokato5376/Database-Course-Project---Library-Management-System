@@ -1,49 +1,10 @@
 # Database-Course-Project---Library-Management-System
 This is the final report for the Database Project, create by group 3 from EP16A (National Economics University). Please contact me via address: tuannh2209@gmail.com if you want to know more information about this project.
 
-# 📚 Library Management System - Database Project
+In this document, we will instruct you how to operate the system, from running the database server to visualizing the data by Python code. We also establish a small web, executed by Streamlit library. Make sure that you have downloaded the SQL, Python code and set up all requirements needed for operating system.
 
-> **Course:** Database Management Systems  
-> **Institution:** National Economics University (NEU)  
-> **Project Type:** Final Course Project  
-
----
-
-## 📖 1. Project Overview
-The **Library Information Manager** is a comprehensive relational database system designed to modernize library operations. It replaces manual tracking methods with an automated, consistent, and secure digital solution.
-
-The system manages the entire lifecycle of library resources, from book inventory and member registration to loan transactions and automated fine calculations.
-
-### Key Objectives:
-- **Data Consistency:** Normalized database (3NF) to prevent redundancy.
-- **Automation:** Database Triggers automatically handle inventory updates and fine calculations ($2.00/day for overdue items).
-- **Analytics:** Python-based visualizations and a **Streamlit Dashboard** for real-time decision-making.
-
----
-
-## 🛠️ 2. Tech Stack
-The project is built using the following technologies:
-
-* **Database:** MySQL 8.0 (MySQL Workbench)
-* **Backend Logic:** SQL (Stored Procedures, Triggers, Views)
-* **Application Layer:** Python 3.x
-* **Libraries:**
-    * `pymysql`: Database connector.
-    * `pandas`: Data manipulation and reporting.
-    * `matplotlib` & `seaborn`: Data visualization.
-    * `streamlit`: Interactive Web Dashboard.
-
----
-
-## 📂 3. Project Structure
-The repository is organized as follows:
-
-```text
-├── database/
-│   ├── schema.sql          # DDL: Creates Tables, Views, Procedures, Triggers
-│   └── seed.sql            # DML: Populates sample data (2025 scenarios)
-├── src/
-│   ├── lib_app.py          # Main Streamlit Web Application
-│   ├── library_outputs.py  # Python Script for Console Reports
-│   └── library_viz.py      # Python Script for Charts & Graphs
-└── README.md               # Project Documentation
+## 1. Create server on MySQL Workbench
+In this project, we use the version 8.0.44 of MySQL Workbench. After you have downloaded the raw SQL files from this project, set up the system as follows:
+- **Check Users and Privileges:**
+   We use the Standard Type of Authentication, so if you have set the Caching_Sha2 authentication type, please run the file caching_sha2_password.sql and remember to modify the localhost with your ID Address in your database server and your own password. The result of Users and Privileges of the database should be compatible as follow:
+   <img width="1211" height="536" alt="image" src="https://github.com/user-attachments/assets/094a6e92-e450-4369-97c0-7bee23b93e2f" />
