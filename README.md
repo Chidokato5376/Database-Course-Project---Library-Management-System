@@ -18,10 +18,12 @@ In this project, we use the version 8.0.44 of MySQL Workbench. After you have do
    The queries in MySQL are the evidence that prove the system worked normally in both MySQL and Python. To check these, execute the file queries_check.sql and ensure that you have executed all the fundamental files before, include caching_sha2_password.sql (recommended), schema.sql, seed.sql, views.sql, stored_procedured.sql and triggers.sql in order.
 
 ## 2. Operating Web and other tasks
-We just create a demo web for visualizing the data by Python. However, the warrant of SQL connection in operating Web is also necessary for other tasks, such as tablizing data and visualizations. These are the essential steps to execute the raw Python files successfully:
+We just create a demo web for visualizing the data by Python. However, the warrant of SQL connection in operating Web is also necessary for other tasks, such as tablizing data and visualizations. These are some essential actions to execute the raw Python files successfully:
 
 - **Modify the connection configuration:**
   In part 1, you have already had your username and your database's ID address. With the private password you have create in MySQL Workbench, modify the "CONNECTION CONFIGURATION" in each Python file to ensure that the connection between Python and MySQL is compatible.
   <img width="677" height="306" alt="image" src="https://github.com/user-attachments/assets/cd11454f-dae1-4449-b61f-86e5eb7a1d7b" />
 
+- **Execute the Web-demo Python file:**
+  In the Terminal of Python Environment (VSCode, etc), change the primitive direction to the folder that you have downloaded the Web-demo Python file (lib_abb.py). After changing your server information, `streamlit` 
 
