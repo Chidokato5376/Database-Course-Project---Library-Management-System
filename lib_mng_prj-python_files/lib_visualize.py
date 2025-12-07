@@ -13,7 +13,7 @@ def get_connection():
     return pymysql.connect(
         host="127.0.0.1",       # Use IP instead of localhost
         user="root",
-        password="hoangtuan5p", # Your password
+        password="********", # Your password
         database="LibraryManagementDB"
     )
 
@@ -185,4 +185,5 @@ if __name__ == "__main__":
         
         print("\nAll charts generated successfully.")
     except Exception as e:
+
         print(f"Error occurred: {e}")
