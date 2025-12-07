@@ -3,7 +3,31 @@ This is the final report for the Database Project, create by group 3 from EP16A 
 
 In this document, we will instruct you how to operate the system, from running the database server to visualizing the data by Python code. We also establish a small web, executed by Streamlit library. Make sure that you have downloaded the SQL, Python code and set up all requirements needed for operating system.
 
-## 1. Setup server on MySQL Workbench
+## 1. Project Overview
+The **Library Information Manager** is a comprehensive relational database system designed to modernize library operations. It replaces manual tracking methods with an automated, consistent, and secure digital solution.
+
+The system manages the entire lifecycle of library resources, from book inventory and member registration to loan transactions and automated fine calculations.
+
+### Key Objectives:
+- **Data Consistency:** Normalized database (3NF) to prevent redundancy.
+- **Automation:** Database Triggers automatically handle inventory updates and fine calculations ($2.00/day for overdue items).
+- **Analytics:** Python-based visualizations and a **Streamlit Dashboard** for real-time decision-making.
+
+---
+
+## 2. Tech Stack
+The project is built using the following technologies:
+
+* **Database:** MySQL 8.0 (MySQL Workbench)
+* **Backend Logic:** SQL (Stored Procedures, Triggers, Views)
+* **Application Layer:** Python 3.x
+* **Libraries:**
+    * `pymysql`: Database connector.
+    * `pandas`: Data manipulation and reporting.
+    * `matplotlib` & `seaborn`: Data visualization.
+    * `streamlit`: Interactive Web Dashboard.
+
+## 3. Setup server on MySQL Workbench
 In this project, we use the version 8.0.44 of MySQL Workbench. After you have downloaded the raw SQL files from this project, set up the system as follows:
 
 - **Check your username and localhost:**
@@ -17,7 +41,7 @@ In this project, we use the version 8.0.44 of MySQL Workbench. After you have do
 - **Check the queries:**
    The queries in MySQL are the evidence that prove the system worked normally in both MySQL and Python. To check these, execute the file queries_check.sql and ensure that you have executed all the fundamental files before, include caching_sha2_password.sql (recommended), schema.sql, seed.sql, views.sql, stored_procedured.sql and triggers.sql in order.
 
-## 2. Operating Web and other tasks
+## 4. Operating Web and other tasks
 We just create a demo web for visualizing the data by Python. However, the warrant of SQL connection in operating Web is also necessary for other tasks, such as tablizing data and visualizations. These are some essential actions to execute the raw Python files successfully:
 
 - **Modify the connection configuration:**
