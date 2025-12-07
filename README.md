@@ -27,7 +27,41 @@ The project is built using the following technologies:
     * `matplotlib` & `seaborn`: Data visualization.
     * `streamlit`: Interactive Web Dashboard.
 
-## 3. Setup server on MySQL Workbench
+## 3. Project Structure
+The repository is organized as follows:
+
+```text
+├── lib_mng_prj-python_file/                # Application Layer (Source Code)
+│   ├── lib_app.py                          # Main Streamlit Web Dashboard
+│   ├── lib_table.py                        # Script for console-based table reporting
+│   └── lib_visualize.py                    # Script for generating Charts & Visualizations
+│
+├── library management project_sql files/   # Database Layer (SQL Scripts)
+│   ├── schema.sql                          # DDL: Creates Database, Tables & Constraints
+│   ├── seed.sql                            # DML: Populates sample data (2025 Scenario)
+│   ├── views.sql                           # Definition of Database Views
+│   ├── stored_procedures.sql               # Logic for Reporting & Borrowing
+│   ├── triggers.sql                        # Logic for Automated Fines & Inventory
+│   ├── queries_check.sql                   # Verification queries
+│   ├── caching_sha2_password.sql           # Configuration fix for Python authentication
+│   └── erd_table.mwb                       # MySQL Workbench Design File (ERD)
+│
+├── python_output_lib_mng_prj/              # Execution Evidence & Results
+│   ├── Library Management Dashboard_*.pdf  # Exported Dashboard Reports
+│   ├── inventory_chart.png.jpg             # Visualization: Inventory Status
+│   ├── active_loans_pie.png.jpg            # Visualization: Loan Distribution
+│   ├── trigger_validation_chart.png.jpg    # Visualization: Trigger Logic Proof
+│   ├── mysql_privileges.png                # Screenshot: Database Configuration
+│   ├── python_console.png                  # Screenshot: Python Terminal Output
+│   └── ...                                 # Other screenshots of tables & queries
+│
+├── Database_Report.pdf                     # Final Academic Report (Full Documentation)
+├── requirements.txt                        # Python Dependencies & Libraries
+├── .gitignore                              # Git configuration
+└── README.md                               # Project Overview
+```
+
+## 4. Setup server on MySQL Workbench
 In this project, we use the version 8.0.44 of MySQL Workbench. After you have downloaded the raw SQL files from this project, set up the system as follows:
 
 - **Check your username and localhost:**
@@ -41,7 +75,7 @@ In this project, we use the version 8.0.44 of MySQL Workbench. After you have do
 - **Check the queries:**
    The queries in MySQL are the evidence that prove the system worked normally in both MySQL and Python. To check these, execute the file queries_check.sql and ensure that you have executed all the fundamental files before, include caching_sha2_password.sql (recommended), schema.sql, seed.sql, views.sql, stored_procedured.sql and triggers.sql in order.
 
-## 4. Operating Web and other tasks
+## 5. Operating Web and other tasks
 We just create a demo web for visualizing the data by Python. However, the warrant of SQL connection in operating Web is also necessary for other tasks, such as tablizing data and visualizations. These are some essential actions to execute the raw Python files successfully:
 
 - **Modify the connection configuration:**
