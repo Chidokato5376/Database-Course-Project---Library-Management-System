@@ -26,6 +26,7 @@ We just create a demo web for visualizing the data by Python. However, the warra
 
 - **Execute the Web-demo Python file:**
   In the Terminal of Python Environment (VSCode, etc), change the primitive direction to the folder that you have downloaded the Web-demo Python file (lib_abb.py). After changing your server information, run `streamlit run lib_app.py` in Terminal. The Web will run automatically if you execute successfully the Web Python file, just experience all the features in the Web.
+  
   <img width="714" height="223" alt="image" src="https://github.com/user-attachments/assets/81fa7c43-6528-43f6-9c32-efa1df96d27c" />
 
 ## Conclusion
