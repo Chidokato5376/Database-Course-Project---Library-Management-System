@@ -1,0 +1,9 @@
+python 3.13.x
+pip install pymysql pandas matplotlib seaborn streamlit
+MySQL Workbench 8.0.x
+pymysql==1.1.2
+numpy>=1.26.0
+pandas==2.3.2
+matplotlib==3.10.6
+seaborn==0.13.2
+streamlit==1.52.0
