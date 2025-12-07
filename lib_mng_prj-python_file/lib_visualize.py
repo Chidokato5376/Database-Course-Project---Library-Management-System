@@ -129,7 +129,7 @@ def visualize_trigger_impact():
     query = """
         SELECT 
             p.amount as Fine_Amount,
-            p.remarks,  -- Lấy remarks về
+            p.remarks,  
             m.member_id,
             m.full_name
         FROM Payment p
@@ -185,4 +185,5 @@ if __name__ == "__main__":
         
         print("\nAll charts generated successfully.")
     except Exception as e:
+
         print(f"Error occurred: {e}")
