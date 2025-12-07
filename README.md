@@ -25,5 +25,10 @@ We just create a demo web for visualizing the data by Python. However, the warra
   <img width="677" height="306" alt="image" src="https://github.com/user-attachments/assets/cd11454f-dae1-4449-b61f-86e5eb7a1d7b" />
 
 - **Execute the Web-demo Python file:**
-  In the Terminal of Python Environment (VSCode, etc), change the primitive direction to the folder that you have downloaded the Web-demo Python file (lib_abb.py). After changing your server information, `streamlit` 
+  In the Terminal of Python Environment (VSCode, etc), change the primitive direction to the folder that you have downloaded the Web-demo Python file (lib_abb.py). After changing your server information, run `streamlit run lib_app.py` in Terminal. The Web will run automatically if you execute successfully the Web Python file, just experience all the features in the Web.
+  <img width="714" height="223" alt="image" src="https://github.com/user-attachments/assets/81fa7c43-6528-43f6-9c32-efa1df96d27c" />
+
+## Conclusion
+This is a small project served for the final grade of the Database Subject in National Economics University. We admit there will be some mistakes may occur in experiment and execution process. Just let us know your feeling about the project and we will try our best to gain more experience and improve our experiment skills. We would like to give many thanks for your interest and help. These would be the motivations for us to make more complicated projects in the future.
+ 
 
